@@ -25,7 +25,7 @@ module Rack
       end
 
       def javascript_for(locale, translations)
-        %(var __locale = #{translations.to_json};)
+        ["var __locale = #{translations.to_json};"]
       end
     end
   end
